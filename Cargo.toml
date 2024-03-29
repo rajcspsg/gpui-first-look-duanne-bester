@@ -6,9 +6,12 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+#tree-sitter = { git = "https://github.com/tree-sitter/tree-sitter", rev = "4294e59279205f503eb14348dd5128bd5910c8fb" }
 gpui = { git = "https://github.com/zed-industries/zed" }
 assets = { git = "https://github.com/zed-industries/zed" }
 theme = { git = "https://github.com/zed-industries/zed" }
 settings = { git = "https://github.com/zed-industries/zed" }
-tree-sitter = { git = "https://github.com/zed-industries/zed" }
 ui = { git = "https://github.com/zed-industries/zed" }
+
+[patch.crates-io]
+tree-sitter = { git = "https://github.com/tree-sitter/tree-sitter", rev = "4294e59279205f503eb14348dd5128bd5910c8fb" }
